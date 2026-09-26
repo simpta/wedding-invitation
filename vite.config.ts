@@ -17,13 +17,6 @@ const distFolder = "build"
 
 let base = "/"
 
-try {
-  const url = new URL(pkg.homepage)
-  base = url.pathname
-} catch (e) {
-  base = pkg.homepage || "/"
-}
-
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
